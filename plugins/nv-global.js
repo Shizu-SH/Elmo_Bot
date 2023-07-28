@@ -7,23 +7,23 @@ if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat') || m.
 let join = `*< 𝚄𝙽𝙴 𝚄𝙽 𝙱𝙾𝚃 𝙰 𝚃𝚄 𝙶𝚁𝚄𝙿𝙾 />*\n\n*𝙷𝙾𝙻𝙰 𝚄𝚂𝚄𝙰𝚁𝙸𝙾/𝙰*\n*𝙿𝙰𝚁𝙰 𝚂𝙾𝙻𝙸𝙲𝙸𝚃𝙰𝚁 𝚄𝙽 𝙱𝙾𝚃 𝙰 𝚃𝚄 𝙶𝚁𝚄𝙿𝙾 𝚄𝚂𝙰 𝙴𝙻 𝙲𝙾𝙼𝙰𝙽𝙳𝙾 #join 𝙼𝙰𝚂 𝙴𝙻 𝙴𝙽𝙻𝙰𝙲𝙴 𝙳𝙴 𝚃𝚄 𝙶𝚁𝚄𝙿𝙾*\n\n*—◉ 𝙴𝙹𝙴𝙼𝙿𝙻𝙾:*\n*◉ #join* https://chat.whatsapp.com/LjJbmdO0qSDEKgB60qivZj`.trim() 
 this.sendMessage(m.chat, { image: global.imagen4, caption: join }, { quoted: m })}   
     
-if (/^hola$/i.test(m.text) && chat.audios && !chat.isBanned) {
-let vn = './media/Hola.mp3'
+if (/^awebo$/i.test(m.text) && chat.audios && !chat.isBanned) {
+let vn = './media/awebo.m4a'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}    
 
-if (!chat.isBanned && chat.audios && m.text.match(/(anadieleimporta|a nadie le importa)/gi)) {
-let vn = './media/dylan1.mp3'
+if (!chat.isBanned && chat.audios && m.text.match(/(chupa)/gi)) {
+let vn = './media/chupa.m4a'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}
     
-if (!chat.isBanned && chat.audios && m.text.match(/(araara|ara ara)/gi)) {    
-let vn = './media/Ara.mp3'
+if (!chat.isBanned && chat.audios && m.text.match(/(vives|sabe)/gi)) {    
+let vn = './media/elmo_sabe_donde_vives.m4a'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}
     
-if (!chat.isBanned && chat.audios && m.text.match(/(miarda de bot|mierda de bot|mearda de bot|Miarda de Bot|Mierda de Bot|Mearda de Bot)/gi)) {    
-let vn = './media/insultar.mp3'
+if (!chat.isBanned && chat.audios && m.text.match(/(esnifar|coca|droga|marihuana|snifar|drogarse)/gi)) {    
+let vn = './media/snifar_coca.m4a'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}    
     
