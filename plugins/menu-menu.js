@@ -27,7 +27,7 @@ let str = `╭═══〘 ✯✯✯✯✯✯✯✯✯ 〙══╮
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
 ║➤ *Owner:* Shizu - Hub
 ║➤ *Bot ofc:* wa.me/5219991402134
-║➤ *Apoyar:* https://www.paypal.me/TheShadowBrokers133
+║➤ *Apoyar:* atom.bio/shizu-sh
 ║➤ *Fecha:* ${date}
 ║➤ *Tiempo activo:* ${uptime}
 ╰═══╡✯✯✯✯✯✯✯✯✯╞═══╯
