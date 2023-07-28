@@ -1,9 +1,9 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems }) => {
 try {
-let pp = imagen4
+let pp = imagen1
 //let vn = './media/menu.mp3'
-let img =  './Menu2.png'
+let img =  './Music.png'
 let d = new Date(new Date + 3600000)
 let locale = 'es'
 let week = d.toLocaleDateString(locale, { weekday: 'long' })
