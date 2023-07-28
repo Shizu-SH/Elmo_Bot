@@ -32,23 +32,23 @@ let vn = './media/cariñosas.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}
     
-if (!chat.isBanned && chat.audios && m.text.match(/(baneado|Baneado)/gi)) {    
-let vn = './media/baneado.mp3'
+if (!chat.isBanned && chat.audios && m.text.match(/(chingon|elmo)/gi)) {    
+let vn = './media/elmo_es_chingon.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}   
    
-if (!chat.isBanned && chat.audios && m.text.match(/(bebito fiu fiu|bff|Bebito Fiu Fiu|Bff)/gi)) {    
-let vn = './media/bff.mp3'
+if (!chat.isBanned && chat.audios && m.text.match(/(dijistes|como|que|q)/gi)) {    
+let vn = './media/que_dijistes.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}
     
-if (!chat.isBanned && chat.audios && m.text.match(/(buenas noches|Buenas noches|Boanoite|boanoite)/gi)) {    
-let vn = './media/boanoite.mp3'
+if (!chat.isBanned && chat.audios && m.text.match(/(te crees mejor|chulo)/gi)) {    
+let vn = './media/te_crees_mejor_q_elmo.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}
     
-if (!chat.isBanned && chat.audios && m.text.match(/(buenas tardes|Buenas tardes|boatarde|Boatarde)/gi)) {    
-let vn = './media/boatarde.mp3'
+if (!chat.isBanned && chat.audios && m.text.match(/(te revelas|revela|no)/gi)) {    
+let vn = './media/te_revelas.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}
     
