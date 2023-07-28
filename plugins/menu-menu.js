@@ -4,7 +4,7 @@ if (usedPrefix == 'a' || usedPrefix == 'A') return
 try {
 let pp = imagen4
 //let vn = './media/menu.mp3'
-let img =  './Menu2.jpg'
+let img =  './Menu.png'
 let d = new Date(new Date + 3600000)
 let locale = 'es'
 let week = d.toLocaleDateString(locale, { weekday: 'long' })
@@ -21,18 +21,15 @@ let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
 var document = doc[Math.floor(Math.random() * doc.length)]    
 let str = `╭═══〘 ✯✯✯✯✯✯✯✯✯ 〙══╮
-║    ◉— *𝐓𝐡𝐞 𝐌𝐲𝐬𝐭𝐢𝐜 - 𝐁𝐨𝐭* —◉
+║    ◉— *Elmo - Bot* —◉
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
 ║➤ *𝗛ola, ${taguser}*
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
-║➤ *Owner:* Bruno Sobrino
-║➤ *Numero:* wa.me/5219992095479
+║➤ *Owner:* Shizu - Hub
 ║➤ *Bot ofc:* wa.me/5219991402134
-║➤ *Bot ofc 2:* wa.me/5219993404349
-║➤ *PayPal:* https://www.paypal.me/TheShadowBrokers133
+║➤ *Apoyar:* https://www.paypal.me/TheShadowBrokers133
 ║➤ *Fecha:* ${date}
 ║➤ *Tiempo activo:* ${uptime}
-║➤ *Usuarios:* ${rtotalreg}
 ╰═══╡✯✯✯✯✯✯✯✯✯╞═══╯
 
 ┏━━━━━━━━━━━━━━━━┓
@@ -47,11 +44,6 @@ let str = `╭═══〘 ✯✯✯✯✯✯✯✯✯ 〙══╮
 ┣ *🎟️ Premium:* ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌') || ''}
 ┗━━━━━━━━━━━━━━━━┛
 ${readMore}
-┏━━━━━━━━━━━━━━━━┓
-┃ *< 𝔹𝕆𝕋 𝕆𝔽ℂ 𝕆 𝕊𝕌𝔹 𝔹𝕆𝕋 />*
-┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ ${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`) || '*Este es el Bot oficial*'}
-┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
 ┃ *< 𝕀ℕ𝔽𝕆 𝔹𝕆𝕋 />*
@@ -396,47 +388,7 @@ ${readMore}
 ┃ *- 𝙴𝚂𝙲𝚁𝙸𝙱𝙴 𝙻𝙰𝚂 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴𝚂 𝙿𝙰𝙻𝙰𝙱𝚁𝙰𝚂 𝙾 𝙵𝚁𝙰𝚂𝙴𝚂 𝚂𝙸𝙽 𝙽𝙸𝙽𝙶𝚄𝙽 𝙿𝚁𝙴𝙵𝙸𝙹𝙾 (#, /, *, .)* 
 ┃ _- (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ ඬ⃟ 🔊 _Quien es tu sempai botsito 7w7_
-┣ ඬ⃟ 🔊 _Te diagnostico con gay_
-┣ ඬ⃟ 🔊 _A nadie le importa_
-┣ ඬ⃟ 🔊 _Fiesta del admin_
-┣ ඬ⃟ 🔊 _Fiesta del administrador_ 
-┣ ඬ⃟ 🔊 _Vivan los novios_
-┣ ඬ⃟ 🔊 _Feliz cumpleaños_
-┣ ඬ⃟ 🔊 _Noche de paz_
-┣ ඬ⃟ 🔊 _Buenos dias_
-┣ ඬ⃟ 🔊 _Buenos tardes_
-┣ ඬ⃟ 🔊 _Buenos noches_
-┣ ඬ⃟ 🔊 _Audio hentai_
-┣ ඬ⃟ 🔊 _Chica lgante_
-┣ ඬ⃟ 🔊 _Feliz navidad_
-┣ ඬ⃟ 🔊 _Vete a la vrg_
-┣ ඬ⃟ 🔊 _Pasa pack Bot_
-┣ ඬ⃟ 🔊 _Atencion grupo_
-┣ ඬ⃟ 🔊 _Marica quien_
-┣ ඬ⃟ 🔊 _Murio el grupo_
-┣ ඬ⃟ 🔊 _Oh me vengo_
-┣ ඬ⃟ 🔊 _tio que rico_
-┣ ඬ⃟ 🔊 _Viernes_
-┣ ඬ⃟ 🔊 _Baneado_
-┣ ඬ⃟ 🔊 _Sexo_
-┣ ඬ⃟ 🔊 _Hola_
-┣ ඬ⃟ 🔊 _Un pato_
-┣ ඬ⃟ 🔊 _Nyanpasu_
-┣ ඬ⃟ 🔊 _Te amo_
-┣ ඬ⃟ 🔊 _Yamete_
-┣ ඬ⃟ 🔊 _Bañate_
-┣ ඬ⃟ 🔊 _Es puto_
-┣ ඬ⃟ 🔊 _La biblia_
-┣ ඬ⃟ 🔊 _Onichan_
-┣ ඬ⃟ 🔊 _Mierda de Bot_
-┣ ඬ⃟ 🔊 _Siuuu_
-┣ ඬ⃟ 🔊 _Epico_
-┣ ඬ⃟ 🔊 _Shitpost_
-┣ ඬ⃟ 🔊 _Rawr_
-┣ ඬ⃟ 🔊 _UwU_
-┣ ඬ⃟ 🔊 _:c_
-┣ ඬ⃟ 🔊 _a_
+┣ ඬ⃟ 🔊 _No hay por el momento_
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
@@ -596,7 +548,7 @@ conn.sendMessage(m.chat, { image: pp, caption: str.trim(), mentions: [...str.mat
 conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝙼𝙴𝙽𝚄 𝚃𝙸𝙴𝙽𝙴 𝚄𝙽 𝙴𝚁𝚁𝙾𝚁 𝚈 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙴𝙽𝚅𝙸𝙰𝚁𝙻𝙾, 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃*', m)
 }}
 handler.command = /^(menu|menú|memu|memú|help|info|comandos|allmenu|2help|menu1.2|ayuda|commands|commandos|cmd)$/i
-handler.exp = 50
+handler.exp = 0
 handler.fail = null
 export default handler
 function clockString(ms) {
