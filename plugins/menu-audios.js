@@ -34,6 +34,7 @@ let str = `╭═══〘 ✯✯✯✯✯✯✯✯✯ 〙══╮
 ┣ ඬ⃟🔊 _elmo sabe donde vives_
 ┣ ඬ⃟🔊 _droga_
 ┣ ඬ⃟🔊 _chupa chupa_
+┣ ඬ⃟🔊 _cariñosas_
 ┗━━━━━━━━━━━━━━━━┛`.trim()
 if (m.isGroup) {
 //await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
