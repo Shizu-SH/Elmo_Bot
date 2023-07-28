@@ -30,6 +30,8 @@ let str = `╭═══〘 ✯✯✯✯✯✯✯✯✯ 〙══╮
 ║➤ *Apoyar:* atom.bio/shizu-sh
 ║➤ *Fecha:* ${date}
 ║➤ *Tiempo activo:* ${uptime}
+║➤ *Grupo:*
+║➤ https://chat.whatsapp.com/GJERWSrarUY6kOFhrWso1F
 ╰═══╡✯✯✯✯✯✯✯✯✯╞═══╯
 
 ┏━━━━━━━━━━━━━━━━┓
@@ -537,7 +539,7 @@ ${readMore}
 ┣ ඬ⃟ 👑 _${usedPrefix}delcmd *<responder a sticker/imagen con comando o texto asignado>*_
 ┗━━━━━━━━━━━━━━━━┛
 
-*Link:* https://chat.whatsapp.com/GJERWSrarUY6kOFhrWso1F
+*Link:*  _https://chat.whatsapp.com/GJERWSrarUY6kOFhrWso1F_
 `.trim()
 if (m.isGroup) {
 //await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
