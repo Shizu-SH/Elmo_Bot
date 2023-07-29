@@ -949,6 +949,36 @@ if (chat.audios && m.text.match(/(sexo)/gi)) {
 let vn = './st/90421b88-bf62-4f15-a112-f789c08c8402.webp'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+
+if (chat.audios && m.text.match(/(entra al chat|entra epicamente al chat)/gi)) {    
+let vn = './st/300a3edf-0d38-4886-aa9e-0e0a0a278cf7.webp'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+
+if (chat.audios && m.text.match(/(tu mama|tu hermana|tu papa)/gi)) {    
+let vn = './st/832a82f3-9f17-4a3b-84a5-46924e6ee7f8.webp'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+
+if (chat.audios && m.text.match(/(ban)/gi)) {    
+let vn = './st/96ba2b06-0285-4150-b679-ebfc796a1fff.webp'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+
+if (chat.audios && m.text.match(/(q pro|que pro)/gi)) {    
+let vn = './st/da8f5496-ac45-4f7c-b9ed-dfcab19ff112.webp'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+
+if (chat.audios && m.text.match(/(y ami q|y a mi q|y ami que|y a mi que)/gi)) {    
+let vn = './st/ab8624e1-fb4d-4820-a1ef-4456e3b17426.webp'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+
+if (chat.audios && m.text.match(/(no te puedo oir|no se oye)/gi)) {    
+let vn = './st/e6579628-050b-421c-966e-4a8b702978d3.webp'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
     
     
 return !0 }
