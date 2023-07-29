@@ -929,6 +929,27 @@ if (chat.audios && m.text.match(/(ya se ofendio)/gi)) {
 let vn = './st/c7210bd5-607d-4e1f-9628-972e0400c4e4.webp'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+
+if (chat.audios && m.text.match(/(bot de mierda|bot hdp|bot cambron| bot hijo)/gi)) {    
+let vn = './st/71840ada-73a3-4733-b74e-86c63df47014.webp'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+
+if (chat.audios && m.text.match(/(piensa)/gi)) {    
+let vn = './st/c9535ceb-e403-43b4-ad38-5bd82877261f.webp'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+
+if (chat.audios && m.text.match(/(ignorante)/gi)) {    
+let vn = './st/1d1b3365-5b08-4767-876f-ed691e4e382d.webp'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+
+if (chat.audios && m.text.match(/(sexo)/gi)) {    
+let vn = './st/90421b88-bf62-4f15-a112-f789c08c8402.webp'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+    
     
 return !0 }
 export default handler
