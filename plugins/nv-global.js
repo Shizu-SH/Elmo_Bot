@@ -870,10 +870,15 @@ let vn = './media/vete a la verga.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
 
-if (chat.audios && m.text.match(/(dialogo)/gi)) {    
+if (chat.audios && m.text.match(/(no funciona)/gi)) {    
 let vn = './st/0851d591-d9fe-4879-8f38-a2f68d5ade60.webp'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
-   
+    
+if (chat.audios && m.text.match(/(good|bien)/gi)) {    
+let vn = './st/2a332ffc-a34f-4a5c-87d9-6e04a9e8e0d4.webp'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
+    
 return !0 }
 export default handler
