@@ -30,7 +30,7 @@ let str = `╭「➻❥ *乇ㄥ爪ㄖ - 乃ㄖㄒ* ➻❥」
 │➯👥 *ᴜsᴜᴀʀɪᴏs:➟${rtotalreg}*
 │➯👥 *ɢʀᴜᴘᴏ:*
 │ _https://chat.whatsapp.com/GJERWSrarUY6kOFhrWso1F_
-│ vs: 1.5
+│ ${vs}
 ︎╰───────────────╯
 
 🍁᭢━━━━━━━━━᭥🍁᭢
