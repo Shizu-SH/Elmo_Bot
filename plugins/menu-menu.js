@@ -20,34 +20,41 @@ let readMore = more.repeat(850)
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
 var document = doc[Math.floor(Math.random() * doc.length)]    
-let str = `╭「➻❥ *乇ㄥ爪ㄖ - 乃ㄖㄒ* ➻❥」
-│➯✨ *𝗛ᴏʟᴀ,➟${taguser}*
-│➯🌴 *ᴏᴡɴᴇʀ:ᴏғᴄ➟Shizu*
-│➯📽️ *ᴀᴘᴏʏᴏ:*
-│➯🖇️ *https://atom.bio/Shizu-SH*
-│➯📅 *ғᴇᴄʜᴀ:➟${date}*
-│➯⏰ *ᴛɪᴇᴍᴘᴏ:➟${uptime}*
-│➯👥 *ᴜsᴜᴀʀɪᴏs:➟${rtotalreg}*
-│➯👥 *ɢʀᴜᴘᴏ:*
-│ _https://chat.whatsapp.com/GJERWSrarUY6kOFhrWso1F_
-│ ${vs}
-︎╰───────────────╯
+let str = `*╭━━❍Eʅɱσ - Bσƚ❍━━╮* 
+ *┃ ╭━━━━━━━━━━━━━━━━╮* 
+ *┃ ┃ ╭┈────────────╮* 
+ *┃ ┃ │❍ 🅼🅴🅽🆄 ❍* 
+ *┃ ┃ ╰┈────────────╯* 
+ *┃ ╰━━━━━━━━━━━━━━━━╯* 
+ *┣━━━▢ ʙᴜᴇɴᴀꜱ, ${taguser}*• 
+ *┃╭━━━━━━━━━━━━━━━━╾•* 
+ *┃┃  ❍ ${vs} ❍* 
+ *┃┣━━━━━━━━━━━━━━━━╾•* 
+ *┃┃ ⋄ ᴄʀᴇᴀᴅᴏʀ ᴅᴇʟ ʙᴏᴛ:  Shizu-Hub* 
+ *┃┃ ⋄ ꜰᴇᴄʜᴀ » ${date}* 
+ *┃┃ ⋄ ᴛɪᴇᴍᴘᴏ ᴀᴄᴛɪᴠᴏ » ${uptime}* 
+ *┃┃ ⋄ ʟᴇɴɢᴜᴀᴊᴇ » ꜱᴘᴀɴɪꜱʜ* 
+ *┃┃ ⋄ ᴜꜱᴜᴀʀɪᴏꜱ » ${rtotalreg}* 
+ *┃╰━━━━━━━━━━━━━━━━╾•* 
+ *╰━━━╼Eʅɱσ - Bσƚ╾━━━╯* 
 
-🍁᭢━━━━━━━━━᭥🍁᭢
-╭─「❥*𝕀ℕ𝔽𝕆 𝔻𝔼𝕃 𝕌𝕊𝕌𝔸ℝ𝕀𝕆*❥」
-┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ *🎖️ Nivel:* ${level}
-┣ *🧰 Experiencia:* ${exp}
-┣ *⚓ Rango:* ${role}
-┣ *💎 Diamantes:* ${limit}
-┣ *👾 MysticCoins:* ${money}
-┣ *🪙 Tokens:* ${joincount}
-┣ *🎟️ Premium:* ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌') || ''}
-┗━━━━━━━━━━━━━━━━┛
+ *╭━━━━━━━━━━━━━━━━╮*
+ *┃ ⋄ ʟɪɴᴋ » ${gc}* 
+ *╰━━━━━━━━━━━━━━━━╾•*
+
+ *╭━━━━━━━━━━━━━━━━╮*
+     *INFO DEL USUARIO*          
+ *╭━━━━━━━━━━━━━━━━╯*
+ *║👤 NOMBRE: ${taguser}* 
+ *║🧰 EXPERIENCIA ➟ ${exp}* 
+ *║⚓ RANGO ➟* ${role}* 
+ *║💎 DIAMANTES ➟ ${limit}* 
+ *║💸 DOLARES ➟ ${money}* 
+ *╰═══════════════* *✧* 
 ${readMore}
 
 🍁᭢━━━━━━━━━᭥🍁᭢
-╭─「❥📌 *𝕀ℕ𝔽𝕆 𝔹𝕆𝕋* 📌❥」
+╭─「❥*𝕀ℕ𝔽𝕆 𝔹𝕆𝕋*❥」
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 💟 _${usedPrefix}terminosycondiciones_
 ┣ ඬ⃟ 💟 _${usedPrefix}grupos_
@@ -65,8 +72,7 @@ ${readMore}
 ┗━━━━━━━━━━━━━━━━┛
 
 🍁᭢━━━━━━━━━᭥🍁᭢
-╭─「❥*𝕌ℕ𝔼 𝕌ℕ 𝔹𝕆𝕋 𝔸 𝕋𝕌 𝔾ℝ𝕌ℙ𝕆
-*❥」
+╭─「❥*𝕌ℕ𝔼 𝕌ℕ 𝔹𝕆𝕋 𝔸 𝕋𝕌 𝔾ℝ𝕌ℙ𝕆*❥」
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 👽 _${usedPrefix}join *<enlace / link / url>*_
 ┗━━━━━━━━━━━━━━━━┛
