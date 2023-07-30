@@ -47,7 +47,7 @@ let vn = './media/te_crees_mejor_q_elmo.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}
     
-if (!chat.isBanned && chat.audios && m.text.match(/(te revelas|revela|no)/gi)) {    
+if (!chat.isBanned && chat.audios && m.text.match(/(te revelas)/gi)) {    
 let vn = './media/te_revelas.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}
