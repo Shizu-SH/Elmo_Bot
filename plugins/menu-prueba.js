@@ -33,10 +33,8 @@ let str = `*╭━━❍Eʅɱσ - Bσƚ❍━━╮*
  *┃┃ ⋄ CREADOR DEL BOT:  Shizu-Hub* 
  *┃┃ ⋄ FECHA » ${date}* 
  *┃┃ ⋄ TIEMPO ACTIVO » ${uptime}* 
- *┃┃ ⋄ LIBRERIA » ${library}* 
  *┃┃ ⋄ LENGUAJE » 𝐄𝐒𝐏𝐀𝐍̃𝐎𝐋* 
  *┃┃ ⋄ USUARIOS » ${rtotalreg}* 
- *┃┃ ⋄ LINK » ${gc}* 
  *┃╰━━━━━━━━━━━━━━━━╾•* 
  *╰━━━╼Eʅɱσ - Bσƚ╾━━━╯* 
 
