@@ -43,11 +43,11 @@ let str = `*╭━━❍Eʅɱσ - Bσƚ❍━━╮*
 *╰━━━━━━━━━━━━━━━━╾•*
 
  *═〔 INFO DEL USUARIO 〕⬣═* 
- *║👤 NOMBRE: ${username}* 
+ *║👤 NOMBRE: ${taguser}* 
  *║🧰 EXPERIENCIA ➟ ${exp}* 
  *║⚓ RANGO ➟* ${role}* 
  *║💎 DIAMANTES ➟ ${limit}* 
- *║💸 DOLARES ➟ ${dolares}* 
+ *║💸 DOLARES ➟ ${money}* 
  *╰═══════════════* *✧* 
 ${readMore}
 
