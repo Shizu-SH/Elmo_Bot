@@ -20,37 +20,42 @@ let readMore = more.repeat(850)
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
 var document = doc[Math.floor(Math.random() * doc.length)]    
-let str = `▂▃▅▆▇✰乇ㄥ爪ㄖ-乃ㄖㄒ✰▇▆▅▃▂
-╭╼ ⃟⃟ᮥ⃪͡ ꧁🌹Tнε Cιиε Hσυѕε🌹꧂ ⃟⃟ᮥ⃪͡ ╼╮  
-│➯✨ 𝗛ᴏʟᴀ,➟@~♤⃢>{.Jbpalaciosxy666.}<⃢♤
-│➯🌴 ᴏᴡɴᴇʀ:ᴏғᴄ➟Shizu
-│➯📽️ ᴀᴘᴏʏᴏ:
-│➯🖇️ https://atom.bio/Shizu-SH
-│➯📅 ғᴇᴄʜᴀ:➟30 de julio de 2023
-│➯⏰ ᴛɪᴇᴍᴘᴏ:➟01:40:28
-│➯👥 ᴜsᴜᴀʀɪᴏs:➟0
-│➯👥 ɢʀᴜᴘᴏ:
-│ https://chat.whatsapp.com/GJERWSrarUY6kOFhrWso1F
-│ 0.5.0
-︎🌹⃕⃝ꦿ᭄ᭃ♡ೃ࿐꒰♥꒱ؘ࿐🌹⃕⃝ꦿ᭄ᭃ♡ೃ
+let str = `*╭━━❍Eʅɱσ - Bσƚ❍━━╮* 
+ *┃ ╭━━━━━━━━━━━━━━━━╮* 
+ *┃ ┃ ╭┈────────────╮* 
+ *┃ ┃ │❍ 🅼🅴🅽🆄 ❍* 
+ *┃ ┃ ╰┈────────────╯* 
+ *┃ ╰━━━━━━━━━━━━━━━━╯* 
+ *┣━━━▢ ❤𝐇𝐎𝐋𝐀, ${username}❤*• 
+ *┃╭━━━━━━━━━━━━━━━━╾•* 
+ *┃┃  ❍ ${ucapan()} ❍* 
+ *┃┣━━━━━━━━━━━━━━━━╾•* 
+ *┃┃ ⋄ CREADOR DEL BOT:  ${creatorname}* 
+ *┃┃ ⋄ VERSION » ${vs}* 
+ *┃┃ ⋄ FECHA » ${date}* 
+ *┃┃ ⋄ TIEMPO ACTIVO » ${uptime}* 
+ *┃┃ ⋄ LIBRERIA » ${library}* 
+ *┃┃ ⋄ LENGUAJE » 𝐄𝐒𝐏𝐀𝐍̃𝐎𝐋* 
+ *┃┃ ⋄ USUARIOS » ${rtotalreg}* 
+ *┃┃ ⋄ LINK » ${gc}* 
+ *┃╰━━━━━━━━━━━━━━━━╾•* 
+ *╰━━━╼Eʅɱσ - Bσƚ╾━━━╯* 
 
-*━━ۧ۟┶━ۣ۠ۛ͠͠͝ϕ̶̸̷ܽۡ͟ํ̷̸̶̶͟͟━━ۧ۟┶━ۣ۠ۛ͠͠͝ϕ̶̸̷ܽۡ͟ํ̷̸̶̶͟͟━━━ۧ۟┶━ϕ̶̸̷ܽۡ͟ํ̷̸̶̶͟͟   
+*╭━━━━━━━━━━━━━━━━╮*
+*┃ ⋄ LINK » ${gc}* 
+*╰━━━━━━━━━━━━━━━━╾•*
 
-🍁᭢━━━━━━━━━᭥🍁᭢
-╭─「❥*𝕀ℕ𝔽𝕆 𝔻𝔼𝕃 𝕌𝕊𝕌𝔸ℝ𝕀𝕆*❥」
-┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ *🎖️ Nivel:* ${level}
-┣ *🧰 Experiencia:* ${exp}
-┣ *⚓ Rango:* ${role}
-┣ *💎 Diamantes:* ${limit}
-┣ *👾 MysticCoins:* ${money}
-┣ *🪙 Tokens:* ${joincount}
-┣ *🎟️ Premium:* ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌') || ''}
-┗━━━━━━━━━━━━━━━━┛
+ *═〔 INFO DEL USUARIO 〕⬣═* 
+ *║👤 NOMBRE: ${username}* 
+ *║🧰 EXPERIENCIA ➟ ${exp}* 
+ *║⚓ RANGO ➟* ${role}* 
+ *║💎 DIAMANTES ➟ ${limit}* 
+ *║💸 DOLARES ➟ ${dolares}* 
+ *╰═══════════════* *✧* 
 ${readMore}
 
 🍁᭢━━━━━━━━━᭥🍁᭢
-╭─「❥📌 *𝕀ℕ𝔽𝕆 𝔹𝕆𝕋* 📌❥」
+╭─「❥*𝕀ℕ𝔽𝕆 𝔹𝕆𝕋*❥」
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 💟 _${usedPrefix}terminosycondiciones_
 ┣ ඬ⃟ 💟 _${usedPrefix}grupos_
@@ -68,8 +73,7 @@ ${readMore}
 ┗━━━━━━━━━━━━━━━━┛
 
 🍁᭢━━━━━━━━━᭥🍁᭢
-╭─「❥*𝕌ℕ𝔼 𝕌ℕ 𝔹𝕆𝕋 𝔸 𝕋𝕌 𝔾ℝ𝕌ℙ𝕆
-*❥」
+╭─「❥*𝕌ℕ𝔼 𝕌ℕ 𝔹𝕆𝕋 𝔸 𝕋𝕌 𝔾ℝ𝕌ℙ𝕆*❥」
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 👽 _${usedPrefix}join *<enlace / link / url>*_
 ┗━━━━━━━━━━━━━━━━┛
