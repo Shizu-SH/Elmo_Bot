@@ -28,10 +28,9 @@ let str = `*╭━━❍Eʅɱσ - Bσƚ❍━━╮*
  *┃ ╰━━━━━━━━━━━━━━━━╯* 
  *┣━━━▢ ❤𝐇𝐎𝐋𝐀, ${username}❤*• 
  *┃╭━━━━━━━━━━━━━━━━╾•* 
- *┃┃  ❍ ${ucapan()} ❍* 
+ *┃┃  ❍ ${vs} ❍* 
  *┃┣━━━━━━━━━━━━━━━━╾•* 
  *┃┃ ⋄ CREADOR DEL BOT:  ${creatorname}* 
- *┃┃ ⋄ VERSION » ${vs}* 
  *┃┃ ⋄ FECHA » ${date}* 
  *┃┃ ⋄ TIEMPO ACTIVO » ${uptime}* 
  *┃┃ ⋄ LIBRERIA » ${library}* 
