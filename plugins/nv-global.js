@@ -355,11 +355,6 @@ let vn = './media/hentai.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
     
-if (chat.audios && m.text.match(/(hola|hello|Hola)/gi)) {    
-let vn = './media/Hola.mp3'
-this.sendPresenceUpdate('recording', m.chat)   
-this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}
-    
 if (chat.audios && m.text.match(/(Homero chino|homero chino|Omero chino|omero chino|Homero Chino)/gi)) {    
 let vn = './media/Homero chino.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
