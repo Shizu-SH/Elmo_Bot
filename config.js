@@ -40,6 +40,7 @@ global.año = d.toLocaleDateString('es', { year: 'numeric' })
 global.tiempo = d.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true })
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 global.vs = '0.5.0'
+global.gc = 'https://chat.whatsapp.com/GJERWSrarUY6kOFhrWso1F'
 //*****************************
 global.wm2 = `▸ ${dia} ${fecha}\n▸ Elmo - 𝙱𝚘𝚝`
 global.gt = '★Elmo - 𝙱𝚘𝚝★'
