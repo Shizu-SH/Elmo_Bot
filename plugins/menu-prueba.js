@@ -20,7 +20,7 @@ let readMore = more.repeat(850)
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
 var document = doc[Math.floor(Math.random() * doc.length)]    
-let str = `*╭━━❍Eʅɱσ - Bσƚ❍━━╮* 
+let str = ` *╭━━❍Eʅɱσ - Bσƚ❍━━╮* 
  *┃ ╭━━━━━━━━━━━━━━━━╮* 
  *┃ ┃ ╭┈────────────╮* 
  *┃ ┃ │❍ 🅼🅴🅽🆄 ❍* 
@@ -42,7 +42,10 @@ let str = `*╭━━❍Eʅɱσ - Bσƚ❍━━╮*
 *┃ ⋄ ʟɪɴᴋ » ${gc}* 
 *╰━━━━━━━━━━━━━━━━╾•*
 
- *═〔 INFO DEL USUARIO 〕⬣═* 
+ *═〔 INFO DEL USUARIO 〕⬣═*
+*╭━━━━━━━━━━━━━━━━━━━━╮*
+     *INFO DEL USUARIO ┃*          
+ *╭━━━━━━━━━━━━━━━━━━━╯*
  *║👤 NOMBRE: ${taguser}* 
  *║🧰 EXPERIENCIA ➟ ${exp}* 
  *║⚓ RANGO ➟* ${role}* 
