@@ -998,7 +998,12 @@ this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt
 if (chat.audios && m.text.match(/(respeta mexicano)/gi)) {    
 let vn = './st/219e42a8-b1ff-4d45-98ac-18a632f723d4.webp'
 this.sendPresenceUpdate('recording', m.chat)   
-this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}  
+
+if (chat.audios && m.text.match(/(jaja bueno|jaja ok)/gi)) {    
+let vn = './st/46f01133-1f64-4437-b5ae-5aff500a9830.webp'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}  
     
 return !0 }
 export default handler
