@@ -41,6 +41,7 @@ global.tiempo = d.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', 
 //⊱ ━━━━━.⋅ Versión | Nombre | cuentas ⋅.━━━━ ⊰
 global.vs = '0.5.0'
 global.gc = 'https://chat.whatsapp.com/GJERWSrarUY6kOFhrWso1F'
+global.openai_key = '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'
 //*****************************
 global.wm2 = `▸ ${dia} ${fecha}\n▸ Elmo - 𝙱𝚘𝚝`
 global.gt = '★Elmo - 𝙱𝚘𝚝★'
