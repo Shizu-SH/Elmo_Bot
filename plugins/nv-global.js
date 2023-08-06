@@ -1014,6 +1014,11 @@ if (chat.audios && m.text.match(/(jaja bueno|jaja ok)/gi)) {
 let vn = './st/46f01133-1f64-4437-b5ae-5aff500a9830.webp'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}  
+
+if (chat.audios && m.text.match(/(denme admin|dame adm|dame admin|quiero admin|quiero adm|ponme admin| ponme adm|quiero adm|quiero admin)/gi)) {    
+let vn = './st/0c75b472-6561-416b-8c80-f5554cb4e9cb.webp'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendFile(m.chat, vn, 'error.mp3', null, m, true, {type: 'audioMessage', ptt: true})}  
     
 return !0 }
 export default handler
