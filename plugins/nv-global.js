@@ -12,6 +12,11 @@ let vn = './media/awebo.m4a'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}    
 
+if (/^chupa chupa hijo la gran puta| hasta que me explote el huevo$/i.test(m.text) && chat.audios && !chat.isBanned) {
+let vn = './media/(43) WhatsApp.mhtml'
+this.sendPresenceUpdate('recording', m.chat)   
+this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}  
+
 if (!chat.isBanned && chat.audios && m.text.match(/(callate la boca|no estoy hablando|silencio)/gi)) {
 let vn = './media/callate la boca.opus'
 this.sendPresenceUpdate('recording', m.chat)   
