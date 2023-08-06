@@ -12,7 +12,7 @@ import moment from 'moment-timezone';
 global.openai_key = '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';
 /* Consigue tu ApiKey en este enlace: https://platform.openai.com/account/api-keys */
 
-global.openai_org_id = 'org-3';
+global.openai_org_id = 'org-5MUzuTIrkMRh9MbcpxYtS7fh';
 /* Consigue tu ID de organizacion en este enlace: https://platform.openai.com/account/org-settings */
 
 
