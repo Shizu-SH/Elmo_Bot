@@ -1176,7 +1176,6 @@ export async function handler(chatUpdate) {
               const messageNumber = user.bannedMessageCount + 1;
               const messageText = `❰ ⚠️ ❱ *ESTAS BANEADO/A* ❰ ⚠️ ❱\nAviso ${messageNumber}/3 (${messageNumber} de 3)${user.bannedReason ? `\n*Motivo:* *${user.bannedReason}*` : ''}
 *👉 Puedes contactar a la propietaria del Bot si crees que se trata de un error (TENER PRUEBAS) para tratar el motivo de tú desbaneo*
-👉 wa.me/5219996125657
 `.trim();
 
               // m.reply(messageText);
