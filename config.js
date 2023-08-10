@@ -44,6 +44,7 @@ global.gc = 'https://chat.whatsapp.com/GJERWSrarUY6kOFhrWso1F'
 global.atom = 'atom.bio/shizu-sh'
 global.openai_key = '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'
 //*****************************
+globar.mg = 'Megas'
 global.wm2 = `▸ ${dia} ${fecha}\n▸ Elmo - 𝙱𝚘𝚝`
 global.gt = '★Elmo - 𝙱𝚘𝚝★'
 global.mysticbot = '★Elmo - 𝙱𝚘𝚝★'
