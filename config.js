@@ -18,7 +18,7 @@ global.reportes_solicitudes = ['5492613619545']
 
 global.packname = '(☞ﾟ∀ﾟ)☞'
 global.author = '★Elmo - 𝙱𝚘𝚝★'
-global.wm = '★Elmo - 𝙱𝚘𝚝★'
+global.wm = '▸ ${dia} ${fecha}\n▸ ★Elmo - 𝙱𝚘𝚝★'
 global.igfg = '★Elmo - 𝙱𝚘𝚝★'
 global.wait = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*'
 
