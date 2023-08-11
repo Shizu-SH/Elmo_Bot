@@ -524,13 +524,11 @@ ${readMore}
 ┣ ඬ⃟ 👑 _${usedPrefix}addcmd *<texto> <responder a sticker/imagen>*_
 ┣ ඬ⃟ 👑 _${usedPrefix}delcmd *<responder a sticker/imagen con comando o texto asignado>*_
 ┗━━━━━━━━━━━━━━━━┛`.trim()
-const { key } = await conn.sendMessage(m.chat, {image: pp, caption: '█▒▒▒▒▒▒▒▒▒ 10%', mentions: [m.sender]}, quoted);
+const { key } = await conn.sendMessage(m.chat, {image: pp, caption: 'Sigueme en Twiter', mentions: [m.sender]}, quoted);
 await new Promise(resolve => setTimeout(resolve, 1000));
-await conn.sendMessage(m.chat, {image: pp, caption: '▓▓▓▒▒▒▒▒▒▒ 30%', edit: key, mentions: [m.sender]});
+await conn.sendMessage(m.chat, {image: pp, caption: 'atom.bio/shizu.sh', edit: key, mentions: [m.sender]});
 await new Promise(resolve => setTimeout(resolve, 1000));
-await conn.sendMessage(m.chat, {image: pp, caption: '▓▓▓▓▓▒▒▒▒▒ 50%', edit: key, mentions: [m.sender]});
-await new Promise(resolve => setTimeout(resolve, 1000));
-await conn.sendMessage(m.chat, {image: pp, caption: '▓▓▓▓▓▓▓▒▒▒ 70%', edit: key, mentions: [m.sender]});
+await conn.sendMessage(m.chat, {image: pp, caption: '(¬‿¬)', edit: key, mentions: [m.sender]});
 await new Promise(resolve => setTimeout(resolve, 1000));
 await conn.sendMessage(m.chat, {image: pp, caption: str, edit: key, mentions: [m.sender]});
 await new Promise(resolve => setTimeout(resolve, 1000));
