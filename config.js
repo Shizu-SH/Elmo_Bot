@@ -16,9 +16,9 @@ global.suittag = ['5492613619545']
 global.prems = ['5492613619545'] 
 global.reportes_solicitudes = ['5492613619545']
 
-global.packname = '(☞ﾟ∀ﾟ)☞'
+global.packname = '▸ ${dia} ${fecha}\n▸ '
 global.author = '★Elmo - 𝙱𝚘𝚝★'
-global.wm = '▸ ${dia} ${fecha}\n▸ ★Elmo - 𝙱𝚘𝚝★'
+global.wm = '★Elmo - 𝙱𝚘𝚝★'
 global.igfg = '★Elmo - 𝙱𝚘𝚝★'
 global.wait = '*[❗] Ƈᴀʀɢᴀɴᴅᴏ, ᴀɢᴜᴀʀᴅᴇ ᴜɴ ᴍᴏᴍᴇɴᴛᴏ...*'
 
@@ -44,7 +44,7 @@ global.gc = 'https://chat.whatsapp.com/GJERWSrarUY6kOFhrWso1F'
 global.atom = 'atom.bio/shizu-sh'
 global.openai_key = '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'
 //*****************************
-globar.mg = 'Megas'
+global.mg = 'Megas'
 global.wm2 = `▸ ${dia} ${fecha}\n▸ Elmo - 𝙱𝚘𝚝`
 global.gt = '★Elmo - 𝙱𝚘𝚝★'
 global.mysticbot = '★Elmo - 𝙱𝚘𝚝★'
