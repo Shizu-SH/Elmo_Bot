@@ -20,13 +20,13 @@ if (command == 'play.2') {
 conn.reply(m.chat, `*_⏳Sᴇ ᴇsᴛᴀ ᴘʀᴏᴄᴇsᴀɴᴅᴏ Sᴜ ᴠɪᴅᴇᴏ...⏳_*`, m)    
 try {   
 let mediaa = await ytPlayVid(text)
-await conn.sendMessage(m.chat, { video: { url: mediaa.result }, fileName: `error.mp4`, caption: `_𝐓𝐡𝐞 𝐌𝐲𝐬𝐭𝐢𝐜 - 𝐁𝐨𝐭_`, thumbnail: mediaa.thumb, mimetype: 'video/mp4' }, { quoted: m })   
+await conn.sendMessage(m.chat, { video: { url: mediaa.result }, fileName: `error.mp4`, caption: `Aqui tienes perrita >:(`, thumbnail: mediaa.thumb, mimetype: 'video/mp4' }, { quoted: m })   
 } catch {
 let res = await fetch(`https://api.lolhuman.xyz/api/ytplay2?apikey=${lolkeysapi}&query=${text}`)    
 let json = await res.json()
 await conn.sendFile(m.chat, json.result.video, 'error.mp4', `_Elmo - Bot_`, m)}}
 } catch (e) {
-m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝚁𝚁𝙾𝚁, 𝙿𝙾𝚁 𝙵𝙰𝚅𝙾𝚁 𝚅𝚄𝙴𝙻𝚅𝙰 𝙰 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝚁𝙻𝙾*')
+m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙼𝙴 𝙻𝙰𝙶𝚄𝙸𝙴, 𝙿𝚁𝚄𝙴𝙱𝙰 𝙳𝙴 𝙽𝚄𝙴𝚅𝙾*')
 }}
 handler.help = ['play.1' , 'play.2'].map(v => v + ' <texto>')
 handler.tags = ['downloader']
