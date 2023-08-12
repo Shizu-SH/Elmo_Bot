@@ -6,7 +6,7 @@ let love = `*❤️❤️ MEDIDOR DE AMOR ❤️❤️*
 *El amor de ${text} por ti es de* *${Math.floor(Math.random() * 100)}%* *de un 100%*
 *Deberias pedirle que sea tu  novia/o ?*
 `.trim()
-const { key } = await conn.sendMessage(m.chat, {image: pp, caption: 'Calculando Amor', mentions: [m.sender]}, quoted);
+const { key } = await conn.sendMessage(m.chat, {image: pp, caption: '❤️Calculando Amor❤️', mentions: [m.sender]}, quoted);
 await new Promise(resolve => setTimeout(resolve, 500));
 await conn.sendMessage(m.chat, {image: pp, caption: '▓▓▓▒▒▒▒▒▒▒ 30%', edit: key, mentions: [m.sender]});
 await new Promise(resolve => setTimeout(resolve, 500));
