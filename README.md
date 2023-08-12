@@ -108,9 +108,9 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 - EL ADD Y EL KICK PUEDEN OCASIONAR QUE EL NUMERO SE VAYA A SOPORTE POR ELLO SE ACTIVA CON #enable restrict 
  
 ## `PROPIETARIO ACTUAL` 
-<a href="https://github.com/Shizu-SH"><img src="https://github.com/Shizu-SH.png" width="100" height="100" alt="Shizu-SH"/></a>
+<a href="https://github.com/Shizu-SH"><img src="https://github.com/Shizu-SH.png" width="250" height="100" alt="Shizu-SH"/></a>
 
 ## `AGRADECIMIENTOS & CREDITOS` 
-<a href="https://github.com/BrunoSobrino"><img src="https://github.com/BrunoSobrino.png" width="250" height="250" alt="BrunoSobrino"/></a>
+<a href="https://github.com/BrunoSobrino"><img src="https://github.com/BrunoSobrino.png" width="100" height="250" alt="BrunoSobrino"/></a>
   
-`TheMystic-Bot-MD - By Bruno Sobrino`
+`Elmo_Bot > Shizu-SH`
