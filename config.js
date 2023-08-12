@@ -16,7 +16,7 @@ global.suittag = ['5492613619545']
 global.prems = ['5492613619545'] 
 global.reportes_solicitudes = ['5492613619545']
 
-global.packname = 'none'
+global.packname = `▸ ${taguser}\n▸ Elmo - 𝙱𝚘𝚝`
 global.author = '★Elmo - 𝙱𝚘𝚝★'
 global.wm = '★Elmo - 𝙱𝚘𝚝★'
 global.igfg = '★Elmo - 𝙱𝚘𝚝★'
