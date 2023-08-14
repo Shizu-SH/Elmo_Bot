@@ -1,72 +1,57 @@
 import fetch from 'node-fetch';
+
 const handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems }) => {
-  if (usedPrefix == 'a' || usedPrefix == 'A') return;
-  try {
-    const pp = imagen4;
-    const img = './Menu.png';
-    const d = new Date(new Date + 3600000);
-    const locale = 'es';
-    const week = d.toLocaleDateString(locale, {weekday: 'long'});
-    const date = d.toLocaleDateString(locale, {day: 'numeric', month: 'long', year: 'numeric'});
-    const _uptime = process.uptime() * 1000;
-    const uptime = clockString(_uptime);
-    const user = global.db.data.users[m.sender];
-    const {money, joincount} = global.db.data.users[m.sender];
-    const {exp, limit, level, role} = global.db.data.users[m.sender];
-    const rtotalreg = Object.values(global.db.data.users).filter((user) => user.registered == true).length;
-    const more = String.fromCharCode(8206);
-    const readMore = more.repeat(850);
-    const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
-    let quoted
-    if (m.isGroup) {
-    quoted = {quoted: m}      
-    } else {
-    quoted = {quoted: {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'}};
-    }
-    const str = `╭═══〘 ✯✯✯✯✯✯✯✯✯ 〙══╮
-║    ◉— *𝐓𝐡𝐞 𝐌𝐲𝐬𝐭𝐢𝐜 - 𝐁𝐨𝐭* —◉
-║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
-║➤ *𝗛ola, ${taguser}*
-║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
-║➤ *Owner:* Bruno Sobrino
-║➤ *Numero:* wa.me/5219992095479
-║➤ *Bot ofc:* wa.me/5219991402134
-║➤ *Bot ofc 2:* wa.me/5219993404349
-║➤ *PayPal:* https://www.paypal.me/TheShadowBrokers133
-║➤ *Fecha:* ${date}
-║➤ *Tiempo activo:* ${uptime}
-║➤ *Usuarios:* ${rtotalreg}
-╰═══╡✯✯✯✯✯✯✯✯✯╞═══╯
+    if (usedPrefix == 'a' || usedPrefix == 'A') return;
 
-┏━━━━━━━━━━━━━━━━┓
-┃ *< 𝕀ℕ𝔽𝕆 𝔻𝔼𝕃 𝕌𝕊𝕌𝔸ℝ𝕀𝕆 />*
-┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ *🎖️ Nivel:* ${level}
-┣ *🧰 Experiencia:* ${exp}
-┣ *⚓ Rango:* ${role}
-┣ *💎 Diamantes:* ${limit}
-┣ *👾 MysticCoins:* ${money}
-┣ *🪙 Tokens:* ${joincount}
-┣ *🎟️ Premium:* ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌') || ''}
-┗━━━━━━━━━━━━━━━━┛
+    try {
+        const pp = imagen4;
+        const img = './Menu.png';
+        const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
+
+        const loadingMessages = [
+            '█▒▒▒▒▒▒▒▒▒ 10%',
+            '▓▓▓▒▒▒▒▒▒▒ 30%',
+            '▓▓▓▓▓▒▒▒▒▒ 50%',
+            '▓▓▓▓▓▓▓▒▒▒ 70%',
+            '▓▓▓▓▓▓▓▓▓▒ 90%',
+            '▓▓▓▓▓▓▓▓▓▓ 100%',
+        ];
+
+        const str = `*╭━━❍Eʅɱσ - Bσƚ❍━━╮* 
+ *┃ ╭━━━━━━━━━━━━━━━━╮* 
+ *┃ ┃ ╭┈────────────╮* 
+ *┃ ┃ │❍ 🅼🅴🅽🆄 ❍* 
+ *┃ ┃ ╰┈────────────╯* 
+ *┃ ╰━━━━━━━━━━━━━━━━╯* 
+ *┣━━━▢ ʙᴜᴇɴᴀꜱ, ${taguser}*• 
+ *┃╭━━━━━━━━━━━━━━━━╾•* 
+ *┃┃  ❍ ${vs} ❍* 
+ *┃┣━━━━━━━━━━━━━━━━╾•* 
+ *┃┃ ⋄ ᴄʀᴇᴀᴅᴏʀ ᴅᴇʟ ʙᴏᴛ:  Shizu-Hub* 
+ *┃┃ ⋄ ꜰᴇᴄʜᴀ » ${date}* 
+ *┃┃ ⋄ ᴛɪᴇᴍᴘᴏ ᴀᴄᴛɪᴠᴏ » ${uptime}* 
+ *┃┃ ⋄ ʟᴇɴɢᴜᴀᴊᴇ » ꜱᴘᴀɴɪꜱʜ* 
+ *┃┃ ⋄ ᴜꜱᴜᴀʀɪᴏꜱ » ${rtotalreg}* 
+ *┃╰━━━━━━━━━━━━━━━━╾•* 
+ *╰━━━╼Eʅɱσ - Bσƚ╾━━━╯* 
+
+ *╭━━━━━━━━━━━━━━━━╮*
+ *┃ ⋄ ʟɪɴᴋ » ${atom}* 
+ *╰━━━━━━━━━━━━━━━━╾•*
+
+ *╭━━━━━━━━━━━━━━━━╮*
+     *INFO DEL USUARIO*          
+ *╭━━━━━━━━━━━━━━━━╯*
+ *║👤 NOMBRE: ${taguser}* 
+ *║🧰 EXPERIENCIA ➟ ${exp}* 
+ *║⚓ RANGO ➟* ${role}* 
+ *║💎 DIAMANTES ➟ ${limit}* 
+ *║💸 DOLARES ➟ ${money}* 
+ *╰═══════════════* *✧* 
 ${readMore}
-┏━━━━━━━━━━━━━━━━┓
-┃ *< 𝔹𝕆𝕋 𝕆𝔽ℂ 𝕆 𝕊𝕌𝔹 𝔹𝕆𝕋 />*
-┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ ${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`) || '*Este es el Bot oficial*'}
-┗━━━━━━━━━━━━━━━━┛
 
-┏━━━━━━━━━━━━━━━━┓
-┃ *< 𝕊𝕆𝕃𝕌ℂ𝕀𝕆ℕ 𝔸 𝔼ℝℝ𝕆ℝ𝔼𝕊 />*
-┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣➤ Mensajes en espera
-┣ ඬ⃟ ⭐ _${usedPrefix}fixmsgespera_
-┣➤ Mensajes en espera (owner)
-┣ ඬ⃟ ⭐ _${usedPrefix}dsowner_
-┗━━━━━━━━━━━━━━━━┛
-
-┏━━━━━━━━━━━━━━━━┓
-┃ *< 𝕀ℕ𝔽𝕆 𝔹𝕆𝕋 />*
+🍁᭢━━━━━━━━━᭥🍁᭢
+╭─「❥*𝕀ℕ𝔽𝕆 𝔹𝕆𝕋*❥」
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 💟 _${usedPrefix}terminosycondiciones_
 ┣ ඬ⃟ 💟 _${usedPrefix}grupos_
@@ -83,22 +68,22 @@ ${readMore}
 ┣ ඬ⃟ 💟 _Bot_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
 ┗━━━━━━━━━━━━━━━━┛
 
-┏━━━━━━━━━━━━━━━━┓
-┃ *< 𝕌ℕ𝔼 𝕌ℕ 𝔹𝕆𝕋 𝔸 𝕋𝕌 𝔾ℝ𝕌ℙ𝕆 />*
+🍁᭢━━━━━━━━━᭥🍁᭢
+╭─「❥*𝕌ℕ𝔼 𝕌ℕ 𝔹𝕆𝕋 𝔸 𝕋𝕌 𝔾ℝ𝕌ℙ𝕆*❥」
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 👽 _${usedPrefix}join *<enlace / link / url>*_
 ┗━━━━━━━━━━━━━━━━┛
 
-┏━━━━━━━━━━━━━━━━┓
-┃ *< 𝕊𝔼ℝ𝔹𝕆𝕋 - 𝕁𝔸𝔻𝕀𝔹𝕆𝕋 />*
+🍁᭢━━━━━━━━━᭥🍁᭢
+╭─「❥*𝕊𝔼ℝ𝔹𝕆𝕋 - 𝕁𝔸𝔻𝕀𝔹𝕆𝕋*❥」 
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 🤖 _${usedPrefix}serbot_
 ┣ ඬ⃟ 🤖 _${usedPrefix}stop_
 ┣ ඬ⃟ 🤖 _${usedPrefix}bots_
 ┗━━━━━━━━━━━━━━━━┛  
 
-┏━━━━━━━━━━━━━━━━┓
-┃ *< 𝕁𝕌𝔼𝔾𝕆𝕊 />*
+🍁᭢━━━━━━━━━᭥🍁᭢
+╭─「❥*𝕁𝕌𝔼𝔾𝕆𝕊*❥」
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 🎖️ _${usedPrefix}mates *<noob / easy / medium / hard / extreme /impossible /impossible2>*_
 ┣ ඬ⃟ 🎖️ _${usedPrefix}ppt *<papel / tijera /piedra>*_
@@ -134,8 +119,8 @@ ${readMore}
 ┣ ඬ⃟ 🎖️ _${usedPrefix}wordfind_
 ┗━━━━━━━━━━━━━━━━┛
 
-┏━━━━━━━━━━━━━━━━┓
-┃ *< 𝔸ℂ𝕋𝕀𝕍𝔸ℝ 𝕆 𝔻𝔼𝕊𝔸ℂ𝕋𝕀𝕍𝔸ℝ />*
+🍁᭢━━━━━━━━━᭥🍁᭢
+╭─「❥*𝔸ℂ𝕋𝕀𝕍𝔸ℝ 𝕆 𝔻𝔼𝕊𝔸ℂ𝕋𝕀𝕍𝔸ℝ*❥」 
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ ☑️ _${usedPrefix}enable *welcome*_
 ┣ ඬ⃟ ☑️ _${usedPrefix}disable *welcome*_
@@ -163,21 +148,20 @@ ${readMore}
 ┣ ඬ⃟ ☑️ _${usedPrefix}disable *modoadmin*_
 ┗━━━━━━━━━━━━━━━━┛
 
-┏━━━━━━━━━━━━━━━━┓
-┣ *< ℝ𝔼ℙ𝕆ℝ𝕋𝔸ℝ 𝔼ℝℝ𝕆ℝ𝔼𝕊 />*
+🍁᭢━━━━━━━━━᭥🍁᭢
+╭─「❥*ℝ𝔼ℙ𝕆ℝ𝕋𝔸ℝ 𝔼ℝℝ𝕆ℝ𝔼𝕊*❥」
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 🔰 _${usedPrefix}reporte *<texto>*_
 ┗━━━━━━━━━━━━━━━━┛
 
-┏━━━━━━━━━━━━━━━━┓
-┃ *< 𝔻𝔼𝕊ℂ𝔸ℝ𝔾𝔸𝕊 />*
+🍁᭢━━━━━━━━━᭥🍁᭢
+╭─「❥*𝔻𝔼𝕊ℂ𝔸ℝ𝔾𝔸𝕊*❥」
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 📥 _${usedPrefix}instagram *<enlace / link / url>*_
 ┣ ඬ⃟ 📥 _${usedPrefix}mediafire *<enlace / link / url>*_
 ┣ ඬ⃟ 📥 _${usedPrefix}gitclone *<enlace / link / url>*_
 ┣ ඬ⃟ 📥 _${usedPrefix}gdrive *<enlace / link / url>*_
 ┣ ඬ⃟ 📥 _${usedPrefix}tiktok *<enlace / link / url>*_
-┣ ඬ⃟ 📥 _${usedPrefix}tiktokimg *<enlace / link / url>*_
 ┣ ඬ⃟ 📥 _${usedPrefix}xnxxdl *<enlace / link / url>*_
 ┣ ඬ⃟ 📥 _${usedPrefix}xvideosdl *<enlace / link / url>*_
 ┣ ඬ⃟ 📥 _${usedPrefix}twitter *<enlace / link / url>*_
@@ -209,8 +193,8 @@ ${readMore}
 ┣ ඬ⃟ 📥 _${usedPrefix}tiktokstalk *<username>*_
 ┗━━━━━━━━━━━━━━━━┛
 
-┏━━━━━━━━━━━━━━━━┓
-┃ *< 𝔹𝕌𝕊ℂ𝔸𝔻𝕆ℝ𝔼𝕊 />*
+🍁᭢━━━━━━━━━᭥🍁᭢
+╭─「❥*𝔹𝕌𝕊ℂ𝔸𝔻𝕆ℝ𝔼𝕊*❥」 
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 🔍 _${usedPrefix}cuevana *<texto>*_
 ┣ ඬ⃟ 🔍 _${usedPrefix}pelisplus *<texto>*_
@@ -226,8 +210,8 @@ ${readMore}
 ┣ ඬ⃟ 🔍 _${usedPrefix}playstore *<texto>*_
 ┗━━━━━━━━━━━━━━━━┛
 
-┏━━━━━━━━━━━━━━━━┓
-┃ *< 𝔾ℝ𝕌ℙ𝕆𝕊 />* 
+🍁᭢━━━━━━━━━᭥🍁᭢
+╭─「❥*𝔾ℝ𝕌ℙ𝕆𝕊*❥」 
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 💎 _${usedPrefix}add *<numero>*_
 ┣ ඬ⃟ 💎 _${usedPrefix}kick *<@tag>*_
@@ -260,8 +244,8 @@ ${readMore}
 ┣ ඬ⃟ 💎 _${usedPrefix}setpp *<imagen>*_
 ┗━━━━━━━━━━━━━━━━┛
 
-┏━━━━━━━━━━━━━━━━┓
-┃ *< ℂ𝕆ℕ𝕍𝔼ℝ𝕋𝕀𝔻𝕆ℝ𝔼𝕊 />*
+🍁᭢━━━━━━━━━᭥🍁᭢
+╭─「❥*ℂ𝕆ℕ𝕍𝔼ℝ𝕋𝕀𝔻𝕆ℝ𝔼𝕊*❥」
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 🧧 _${usedPrefix}toanime *<imagen>*_
 ┣ ඬ⃟ 🧧 _${usedPrefix}togifaud *<video>*_
@@ -274,8 +258,8 @@ ${readMore}
 ┣ ඬ⃟ 🧧 _${usedPrefix}tts es *<texto>*_
 ┗━━━━━━━━━━━━━━━━┛
 
-┏━━━━━━━━━━━━━━━━┓
-┃ *< 𝔼𝔽𝔼ℂ𝕋𝕆𝕊 𝕐 𝕃𝕆𝔾𝕆𝕊 />*
+🍁᭢━━━━━━━━━᭥🍁᭢
+╭─「❥*𝔼𝔽𝔼ℂ𝕋𝕆𝕊 𝕐 𝕃𝕆𝔾𝕆𝕊*❥」
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 🖍️ _${usedPrefix}logos *<efecto> <texto>*_
 ┣ ඬ⃟ 🖍️ _${usedPrefix}logochristmas *<texto>*_
@@ -289,8 +273,8 @@ ${readMore}
 ┣ ඬ⃟ 🖍️ _${usedPrefix}blur_
 ┗━━━━━━━━━━━━━━━━┛
 
-┏━━━━━━━━━━━━━━━━┓
-┃ *< 𝔽ℝ𝔸𝕊𝔼𝕊 𝕐 𝕋𝔼𝕏𝕋𝕆𝕊 />*
+🍁᭢━━━━━━━━━᭥🍁᭢
+╭─「❥*𝔽ℝ𝔸𝕊𝔼𝕊 𝕐 𝕋𝔼𝕏𝕋𝕆𝕊*❥」
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 🥀 _${usedPrefix}piropo_
 ┣ ඬ⃟ 🥀 _${usedPrefix}consejo_
@@ -298,14 +282,8 @@ ${readMore}
 ┣ ඬ⃟ 🥀 _${usedPrefix}historiaromantica_
 ┗━━━━━━━━━━━━━━━━┛
 
-┏━━━━━━━━━━━━━━━━┓
-┃ *< ℝ𝔸ℕ𝔻-𝔸ℕ𝕀𝕄𝔼𝕊 />*
-┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ ඬ⃟ 🧿 _${usedPrefix}menuanimes_
-┗━━━━━━━━━━━━━━━━┛
-
-┏━━━━━━━━━━━━━━━━┓
-┃ *< ℝ𝔸ℕ𝔻𝕆𝕄 />*
+🍁᭢━━━━━━━━━᭥🍁᭢
+╭─「❥*ℝ𝔸ℕ𝔻𝕆𝕄*❥」
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 👾 _${usedPrefix}kpop *<blackpink / exo / bts>*_
 ┣ ඬ⃟ 👾 _${usedPrefix}cristianoronaldo_
@@ -315,7 +293,10 @@ ${readMore}
 ┣ ඬ⃟ 👾 _${usedPrefix}meme_
 ┣ ඬ⃟ 👾 _${usedPrefix}itzy_
 ┣ ඬ⃟ 👾 _${usedPrefix}blackpink_
+┣ ඬ⃟ 👾 _${usedPrefix}lolivid_
+┣ ඬ⃟ 👾 _${usedPrefix}loli_
 ┣ ඬ⃟ 👾 _${usedPrefix}navidad_
+┣ ඬ⃟ 👾 _${usedPrefix}ppcouple_
 ┣ ඬ⃟ 👾 _${usedPrefix}wpmontaña_
 ┣ ඬ⃟ 👾 _${usedPrefix}pubg_
 ┣ ඬ⃟ 👾 _${usedPrefix}wpgaming_
@@ -334,16 +315,54 @@ ${readMore}
 ┣ ඬ⃟ 👾 _${usedPrefix}hacker_
 ┣ ඬ⃟ 👾 _${usedPrefix}planeta_
 ┣ ඬ⃟ 👾 _${usedPrefix}randomprofile_
+┣ ඬ⃟ 👾 _${usedPrefix}neko_
+┣ ඬ⃟ 👾 _${usedPrefix}waifu_
+┣ ඬ⃟ 👾 _${usedPrefix}akira_
+┣ ඬ⃟ 👾 _${usedPrefix}akiyama_
+┣ ඬ⃟ 👾 _${usedPrefix}anna_
+┣ ඬ⃟ 👾 _${usedPrefix}asuna_
+┣ ඬ⃟ 👾 _${usedPrefix}ayuzawa_
+┣ ඬ⃟ 👾 _${usedPrefix}boruto_
+┣ ඬ⃟ 👾 _${usedPrefix}chiho_
+┣ ඬ⃟ 👾 _${usedPrefix}chitoge_
+┣ ඬ⃟ 👾 _${usedPrefix}deidara_
+┣ ඬ⃟ 👾 _${usedPrefix}erza_
+┣ ඬ⃟ 👾 _${usedPrefix}elaina_
+┣ ඬ⃟ 👾 _${usedPrefix}eba_
+┣ ඬ⃟ 👾 _${usedPrefix}emilia_
+┣ ඬ⃟ 👾 _${usedPrefix}hestia_
+┣ ඬ⃟ 👾 _${usedPrefix}hinata_
+┣ ඬ⃟ 👾 _${usedPrefix}inori_
+┣ ඬ⃟ 👾 _${usedPrefix}isuzu_
+┣ ඬ⃟ 👾 _${usedPrefix}itachi_
+┣ ඬ⃟ 👾 _${usedPrefix}itori_
+┣ ඬ⃟ 👾 _${usedPrefix}kaga_
+┣ ඬ⃟ 👾 _${usedPrefix}kagura_
+┣ ඬ⃟ 👾 _${usedPrefix}kaori_
+┣ ඬ⃟ 👾 _${usedPrefix}keneki_
+┣ ඬ⃟ 👾 _${usedPrefix}kotori_
+┣ ඬ⃟ 👾 _${usedPrefix}kurumi_
+┣ ඬ⃟ 👾 _${usedPrefix}madara_
+┣ ඬ⃟ 👾 _${usedPrefix}mikasa_
+┣ ඬ⃟ 👾 _${usedPrefix}miku_
+┣ ඬ⃟ 👾 _${usedPrefix}minato_
+┣ ඬ⃟ 👾 _${usedPrefix}naruto_
+┣ ඬ⃟ 👾 _${usedPrefix}nezuko_
+┣ ඬ⃟ 👾 _${usedPrefix}sagiri_
+┣ ඬ⃟ 👾 _${usedPrefix}sasuke_
+┣ ඬ⃟ 👾 _${usedPrefix}sakura_
+┣ ඬ⃟ 👾 _${usedPrefix}cosplay_
 ┗━━━━━━━━━━━━━━━━┛
 
-┏━━━━━━━━━━━━━━━━┓
-┃ *< ℂ𝕆𝕄𝔸ℕ𝔻𝕆𝕊 +𝟙𝟠 />*
+
+🍁᭢━━━━━━━━━᭥🍁᭢
+╭─「❥*ℂ𝕆𝕄𝔸ℕ𝔻𝕆𝕊 +𝟙𝟠*❥」
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 🔞 _${usedPrefix}labiblia_
 ┗━━━━━━━━━━━━━━━━┛
 
-┏━━━━━━━━━━━━━━━━┓
-┃ *< 𝔼𝔽𝔼ℂ𝕋𝕆𝕊 𝔻𝔼 𝔸𝕌𝔻𝕀𝕆𝕊 />*
+🍁᭢━━━━━━━━━᭥🍁᭢
+╭─「❥*𝔼𝔽𝔼ℂ𝕋𝕆𝕊 𝔻𝔼 𝔸𝕌𝔻𝕀𝕆𝕊*❥」
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┃*- 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴 𝙰 𝙰𝚄𝙳𝙸𝙾 𝙾 𝙽𝙾𝚃𝙰 𝙳𝙴 𝚅𝙾𝚉*
 ┣ ඬ⃟ 🎤 _${usedPrefix}bass_
@@ -360,24 +379,28 @@ ${readMore}
 ┣ ඬ⃟ 🎤 _${usedPrefix}tupai_
 ┗━━━━━━━━━━━━━━━━┛
 
-┏━━━━━━━━━━━━━━━━┓
-┃ *< ℂℍ𝔸𝕋 𝔸ℕ𝕆ℕ𝕀𝕄𝕆 />*
+🍁᭢━━━━━━━━━᭥🍁᭢
+╭─「❥*ℂℍ𝔸𝕋 𝔸ℕ𝕆ℕ𝕀𝕄𝕆*❥」
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 📳 _${usedPrefix}start_
 ┣ ඬ⃟ 📳 _${usedPrefix}next_
 ┣ ඬ⃟ 📳 _${usedPrefix}leave_
 ┗━━━━━━━━━━━━━━━━┛
 
-┏━━━━━━━━━━━━━━━━┓
-┃ *< 𝔸𝕌𝔻𝕀𝕆𝕊 />*   
+🍁᭢━━━━━━━━━᭥🍁᭢
+╭─「❥*𝔸𝕌𝔻𝕀𝕆𝕊*❥」  
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ ඬ⃟ 🔊 _${usedPrefix}menuaudios_
+┃ *- 𝙴𝚂𝙲𝚁𝙸𝙱𝙴 𝙻𝙰𝚂 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴𝚂 𝙿𝙰𝙻𝙰𝙱𝚁𝙰𝚂 𝙾 𝙵𝚁𝙰𝚂𝙴𝚂 𝚂𝙸𝙽 𝙽𝙸𝙽𝙶𝚄𝙽 𝙿𝚁𝙴𝙵𝙸𝙹𝙾 (#, /, *, .)* 
+┃ _- (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
+┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
+┣ ඬ⃟ 🔊 _No hay por el momento_
 ┗━━━━━━━━━━━━━━━━┛
 
-┏━━━━━━━━━━━━━━━━┓
-┃ *< ℍ𝔼ℝℝ𝔸𝕄𝕀𝔼ℕ𝕋𝔸𝕊 />*
+🍁᭢━━━━━━━━━᭥🍁᭢
+╭─「❥*ℍ𝔼ℝℝ𝔸𝕄𝕀𝔼ℕ𝕋𝔸𝕊*❥」
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 🛠️ _${usedPrefix}chatgpt *<texto>*_
+┣ ඬ⃟ 🛠️ _${usedPrefix}chatgpt2 *<texto>*_
 ┣ ඬ⃟ 🛠️ _${usedPrefix}delchatgpt
 ┣ ඬ⃟ 🛠️ _${usedPrefix}dall-e *<texto>*_
 ┣ ඬ⃟ 🛠️ _${usedPrefix}spamwa *<numero|texto|cantidad>*_
@@ -402,32 +425,9 @@ ${readMore}
 ┣ ඬ⃟ 🛠️ _${usedPrefix}horario_
 ┗━━━━━━━━━━━━━━━━┛
 
-┏━━━━━━━━━━━━━━━━┓
-┃ *< ℝℙ𝔾 - 𝕃𝕀𝕄𝕀𝕋𝔼𝕊 - 𝔼ℂ𝕆ℕ𝕆𝕄𝕀𝔸 />*
-┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ ඬ⃟ 💵 _${usedPrefix}adventure_
-┣ ඬ⃟ 💵 _${usedPrefix}cazar_
-┣ ඬ⃟ 💵 _${usedPrefix}cofre_
-┣ ඬ⃟ 💵 _${usedPrefix}balance_
-┣ ඬ⃟ 💵 _${usedPrefix}claim_
-┣ ඬ⃟ 💵 _${usedPrefix}heal_
-┣ ඬ⃟ 💵 _${usedPrefix}lb_
-┣ ඬ⃟ 💵 _${usedPrefix}levelup_
-┣ ඬ⃟ 💵 _${usedPrefix}myns_
-┣ ඬ⃟ 💵 _${usedPrefix}perfil_
-┣ ඬ⃟ 💵 _${usedPrefix}work_
-┣ ඬ⃟ 💵 _${usedPrefix}minar_
-┣ ඬ⃟ 💵 _${usedPrefix}minar2_
-┣ ඬ⃟ 💵 _${usedPrefix}buy_
-┣ ඬ⃟ 💵 _${usedPrefix}buyall_
-┣ ඬ⃟ 💵 _${usedPrefix}verificar_
-┣ ඬ⃟ 💵 _${usedPrefix}robar *<cantidad> <@tag>*_
-┣ ඬ⃟ 💵 _${usedPrefix}transfer *<tipo> <cantidad> <@tag>*_
-┣ ඬ⃟ 💵 _${usedPrefix}unreg *<numero de serie>*_
-┗━━━━━━━━━━━━━━━━┛
 
-┏━━━━━━━━━━━━━━━━┓
-┃ *< 𝕊𝕋𝕀ℂ𝕂𝔼ℝ𝕊 />*
+🍁᭢━━━━━━━━━᭥🍁᭢
+╭─「❥*𝕊𝕋𝕀ℂ𝕂𝔼ℝ𝕊*❥」
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 👽 _${usedPrefix}sticker *<responder a imagen o video>*_
 ┣ ඬ⃟ 👽 _${usedPrefix}sticker *<enlace / link / url>*_
@@ -458,8 +458,8 @@ ${readMore}
 ┣ ඬ⃟ 👽 _${usedPrefix}stickerfilter *<efecto> <imagen>*_
 ┗━━━━━━━━━━━━━━━━┛
 
-┏━━━━━━━━━━━━━━━━┓
-┃ *< 𝕆𝕎ℕ𝔼ℝ 𝕐 𝕄𝕆𝔻𝔼ℝ𝔸𝔻𝕆ℝ𝔼𝕊 />*
+🍁᭢━━━━━━━━━᭥🍁᭢
+╭─「❥*𝕆𝕎ℕ𝔼ℝ 𝕐 𝕄𝕆𝔻𝔼ℝ𝔸𝔻𝕆ℝ𝔼𝕊*❥」
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 👑 > *<funcion>*
 ┣ ඬ⃟ 👑 => *<funcion>*
@@ -518,35 +518,22 @@ ${readMore}
 ┣ ඬ⃟ 👑 _${usedPrefix}addcmd *<texto> <responder a sticker/imagen>*_
 ┣ ඬ⃟ 👑 _${usedPrefix}delcmd *<responder a sticker/imagen con comando o texto asignado>*_
 ┗━━━━━━━━━━━━━━━━┛`.trim();
-  
-const { key } = await conn.sendMessage(m.chat, {image: pp, caption: '█▒▒▒▒▒▒▒▒▒ 10%', mentions: [m.sender]}, quoted);
-await new Promise(resolve => setTimeout(resolve, 500));
-await conn.sendMessage(m.chat, {image: pp, caption: '▓▓▓▒▒▒▒▒▒▒ 30%', edit: key, mentions: [m.sender]});
-await new Promise(resolve => setTimeout(resolve, 500));
-await conn.sendMessage(m.chat, {image: pp, caption: '▓▓▓▓▓▒▒▒▒▒ 50%', edit: key, mentions: [m.sender]});
-await new Promise(resolve => setTimeout(resolve, 500));
-await conn.sendMessage(m.chat, {image: pp, caption: '▓▓▓▓▓▓▓▒▒▒ 70%', edit: key, mentions: [m.sender]});
-await new Promise(resolve => setTimeout(resolve, 500));
-await conn.sendMessage(m.chat, {image: pp, caption: '▓▓▓▓▓▓▓▓▓▒ 90%', edit: key, mentions: [m.sender]});
-await new Promise(resolve => setTimeout(resolve, 500));
-await conn.sendMessage(m.chat, {image: pp, caption: '▓▓▓▓▓▓▓▓▓▓ 100%', edit: key, mentions: [m.sender]});
-await new Promise(resolve => setTimeout(resolve, 500));
-await conn.sendMessage(m.chat, {image: pp, caption: str, edit: key, mentions: [m.sender]});
-await new Promise(resolve => setTimeout(resolve, 500));
-// await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})      
-      
-  } catch {
-    conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝙼𝙴𝙽𝚄 𝚃𝙸𝙴𝙽𝙴 𝚄𝙽 𝙴𝚁𝚁𝙾𝚁 𝚈 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙴𝙽𝚅𝙸𝙰𝚁𝙻𝙾, 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃*', m);
-  }
+
+        const { key } = await conn.sendMessage(m.chat, { image: pp, caption: loadingMessages[0], mentions: [m.sender] });
+        
+        for (let i = 1; i < loadingMessages.length; i++) {
+            await new Promise(resolve => setTimeout(resolve, 500));
+            await conn.sendMessage(m.chat, { image: pp, caption: loadingMessages[i], edit: key, mentions: [m.sender] });
+        }
+
+        await new Promise(resolve => setTimeout(resolve, 500));
+        await conn.sendMessage(m.chat, { image: pp, caption: str, edit: key, mentions: [m.sender] });
+    } catch {
+        conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝙼𝙴𝙽𝚄 𝚃𝙸𝙴𝙽𝙴 𝚄𝙽 𝙴𝚁𝚁𝙾𝚁 𝚈 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙴𝙽𝚅𝙸𝙰𝚁𝙻𝙾, 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃*', m);
+    }
 };
+
 handler.command = /^(mnup)$/i;
 handler.exp = 0;
 handler.fail = null;
 export default handler;
-
-function clockString(ms) {
-  const h = isNaN(ms) ? '--' : Math.floor(ms / 3600000);
-  const m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60;
-  const s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60;
-  return [h, m, s].map((v) => v.toString().padStart(2, 0)).join(':');
-}
