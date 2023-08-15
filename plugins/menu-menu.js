@@ -42,7 +42,7 @@ const handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, i
  *╰━━━╼Eʅɱσ - Bσƚ╾━━━╯* 
 
  *╭━━━━━━━━━━━━━━━━╮*
- *┃ ⋄ ᴄᴏᴍᴀɴᴅᴏꜱ: » https://shizu-sh.github.io/Web/* 
+ *┃ ⋄ ᴄᴏᴍᴀɴᴅᴏꜱ: » http://n3.boxmine.xyz:3048/* 
  *╰━━━━━━━━━━━━━━━━╾•*
 
  *╭━━━━━━━━━━━━━━━━╮*
