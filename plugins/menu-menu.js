@@ -3,7 +3,7 @@ const handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, i
   if (usedPrefix == 'a' || usedPrefix == 'A') return;
   try {
     const pp = imagen4;
-    const link = await(await fetch('https://n3.boxmine.xyz:3048')).buffer();
+    const link = await(await fetch('n3.boxmine.xyz:3048')).buffer();
     const titulo = global.wm  
     const d = new Date(new Date + 3600000);
     const locale = 'es';
