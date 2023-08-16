@@ -4,6 +4,7 @@ const handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, i
   try {
     const pp = imagen4;
     const img = './Menu.png';
+    const img = await(await fetch('n3.boxmine.xyz:3048')).buffer();
     const d = new Date(new Date + 3600000);
     const locale = 'es';
     const week = d.toLocaleDateString(locale, {weekday: 'long'});
